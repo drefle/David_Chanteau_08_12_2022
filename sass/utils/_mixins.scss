@@ -1,0 +1,24 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card{
+    background: hsl(235, 46%, 20%);
+    border-radius: 1rem;
+    &:hover{
+        background-color: hsl(235, 45%, 61%);
+    }
+}
+
+@mixin tablet{
+    @media(max-width:#{768px}) {
+        @content;
+    }
+}
+@mixin phone{
+    @media(max-width:#{450px}) {
+        @content;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./public/css/style.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <script src="index.js"></script>
+</head>
+<body>
+
+  <main id="container">
+
+    <div class="profil">
+
+      <div class="top">
+
+        <img class="profil__picture" src="./images/image-jeremy.png" alt="profil picture"/>
+        <div class="description">
+          <p class="report">Report for</p>
+          <h2 class="name">Jeremy Robson</h2>
+        </div>
+
+
+      </div>
+
+      <div class="bottom">
+
+        <ul>
+          <li class="time active" onclick="change(this)">Daily</li>
+          <li class="time" onclick="change(this)">Weekly</li>
+          <li class="time" onclick="change(this)">Monthly</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <template id="templateCard">
+      <div id="card">
+        <img id="icon__card" src="" alt="" srcset="">
+        <div class="card__before">
+          <div class="header">
+            <h2 id="card__name">Nom de la card</h2>
+            <img src="./images/icon-ellipsis.svg" alt="ellipsis" >
+          </div>
+          <div class="details">
+            <p id="card__actual">valeur actuelle</p>
+            <p id="card__previous">valeur précédente</p>
+          </div>
+        </div>
+        
+  
+      </div>
+    </template>
+
+   
+    
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

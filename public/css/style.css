@@ -1,0 +1,196 @@
+@keyframes media {
+  to {
+    background-color: #222831;
+    color: #FFD369;
+  }
+}
+body {
+  background: hsl(226deg, 43%, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#container {
+  height: fit-content;
+  width: clamp(400px, 80%, 900px);
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 768px) {
+  #container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+}
+
+#card {
+  border-radius: 1rem 1rem 2rem 2rem;
+  position: relative;
+  min-height: 200px;
+}
+#card #icon__card {
+  height: 50px;
+  position: absolute;
+  right: 1rem;
+}
+@media (max-width: 450px) {
+  #card #icon__card {
+    height: 75px;
+  }
+}
+#card .card__before {
+  background: hsl(235deg, 46%, 20%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  position: absolute;
+  width: -webkit-fill-available;
+  bottom: 0;
+}
+#card .card__before:hover {
+  background-color: hsl(235deg, 45%, 61%);
+}
+#card .card__before .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0;
+  font-size: 12px;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+#card .card__before .header img {
+  height: 4px;
+}
+@media (max-width: 450px) {
+  #card .card__before .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#card .card__before .details #card__actual {
+  font-size: 40px;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+#card .card__before .details #card__previous {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 12px;
+}
+
+.profil {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 1rem;
+  grid-row-start: span 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .profil {
+    grid-column-start: span 3;
+    grid-row-start: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+  }
+}
+.profil .top {
+  height: 70%;
+  width: 100%;
+  background: hsl(246deg, 80%, 60%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .profil .top {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.profil .top img {
+  border-radius: 50%;
+  border: solid white 2px;
+  height: 50px;
+  width: 50px;
+}
+.profil .top .description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.profil .top .description .report {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 12px;
+}
+.profil .top .description .name {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+.profil .bottom {
+  height: 30%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+.profil .bottom ul {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: hsl(235deg, 45%, 61%);
+}
+@media (max-width: 768px) {
+  .profil .bottom ul {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+.profil .bottom ul .time:hover {
+  color: white;
+  cursor: pointer;
+}
+.profil .bottom ul .time.active {
+  color: white;
+}
+
+.icon {
+  color: #FFD369;
+  height: 50px;
+  width: auto;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-display: swap;
+  src: url("Rubik-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Rubik;
+}
+
+/*# sourceMappingURL=style.css.map */

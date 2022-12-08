@@ -1,0 +1,27 @@
+body{
+    background: hsl(226, 43%, 10%);
+    @include flex-center;
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#container{
+    height: fit-content;
+    width: clamp(400px,80%,900px);
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4,1fr);
+
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    @include phone{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+}

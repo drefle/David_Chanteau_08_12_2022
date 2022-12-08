@@ -1,0 +1,150 @@
+@-webkit-keyframes media {
+  to {
+    background-color: #222831;
+    color: #FFD369;
+  }
+}
+@keyframes media {
+  to {
+    background-color: #222831;
+    color: #FFD369;
+  }
+}
+body {
+  background: hsl(226deg, 43%, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+
+#container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#card {
+  border-radius: 1rem 1rem 2rem 2rem;
+  position: relative;
+}
+#card .card__before {
+  background: hsl(235deg, 46%, 20%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  position: absolute;
+  width: -webkit-fill-available;
+  bottom: 0;
+}
+#card .card__before:hover {
+  background-color: hsl(235deg, 45%, 61%);
+}
+#card #icon__card {
+  height: 50px;
+  position: absolute;
+  right: 1rem;
+}
+#card .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0;
+  font-size: 12px;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+#card .header img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#card #card__actual {
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+}
+
+.profil {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 1rem;
+  grid-row-start: span 2;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.profil .top {
+  height: 70%;
+  width: 100%;
+  background: hsl(246deg, 80%, 60%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+.profil .top img {
+  border-radius: 50%;
+  border: solid white 2px;
+  height: 50px;
+  width: 50px;
+}
+.profil .top .description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.profil .top .description .report {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 12px;
+}
+.profil .top .description .name {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+.profil .bottom {
+  height: 30%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+.profil .bottom ul {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: hsl(235deg, 45%, 61%);
+}
+.profil .bottom ul .time:hover {
+  color: white;
+  cursor: pointer;
+}
+.profil .bottom ul .time.active {
+  color: white;
+}
+
+.icon {
+  color: #FFD369;
+  height: 50px;
+  width: auto;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-display: swap;
+  src: url("Rubik-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Rubik;
+}/*# sourceMappingURL=main.css.map */
